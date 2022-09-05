@@ -12,4 +12,9 @@ public class MainController {
   public String index() {
     return "Hello from index";
   }
+
+  @RequestMapping("/")
+  public String root() {
+    return "redirect:/question/list";
+  }
 }

@@ -1,11 +1,12 @@
-<h2>Hello Template</h2>
 <table>
   <thead>
-    <tr> Title </tr>
-    <tr> Date </tr>
+    <tr> 
+      <th> Title </th>
+      <th> Date </th>
+    </tr>
   </thead>
   <tbody>
-    <tr th:each="question : $(questionList)">
+    <tr th:each="question : ${questions}">
       <td th:text="${question.subject}"></td>
       <td th:text="${question.createDate}"></td>
     </tr>
